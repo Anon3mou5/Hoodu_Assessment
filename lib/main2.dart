@@ -24,9 +24,9 @@ class _MyHomePageState2 extends State<MyHomePage2> {
             });
           },
           items:[
-            BottomNavigationBarItem(icon: Image(image:AssetImage("assets/md-home.png",))),
-            BottomNavigationBarItem(icon:Image(image:AssetImage("assets/msg.png"))),
-            BottomNavigationBarItem(icon:Image(image:AssetImage("assets/account.png"))),
+            BottomNavigationBarItem(icon: Image(image:AssetImage("assets/md-home.png",)),title: Text("")),
+            BottomNavigationBarItem(icon:Image(image:AssetImage("assets/msg.png")),title: Text("")),
+            BottomNavigationBarItem(icon:Image(image:AssetImage("assets/account.png")),title: Text("")),
           ],
 
          ),
@@ -151,12 +151,12 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                       color: Colors.white, fontSize:20 ,fontWeight: FontWeight.w700),),
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 20),
+                  margin: EdgeInsets.only(right: 15),
                   child: Icon(Icons.notifications, color: Colors.white,size: 25,),
                 ),
                   Container(
                     margin: EdgeInsets.only(right: 20),
-                    child: IconButton(icon: Image.asset("assets/bars.png"),color: Colors.white,iconSize: 25,onPressed:(){Scaffold.of(context).openDrawer();},),
+                    child: Container(height:40,width:55,child:MaterialButton(child:Image.asset("assets/bars.png",fit: BoxFit.fill,),onPressed:(){ Scaffold.of(context).openEndDrawer();},),)
                 ),
               ],
             )
