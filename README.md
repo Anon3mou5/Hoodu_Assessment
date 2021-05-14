@@ -1,6 +1,8 @@
-# hoodu
+# A Simple Flutter Login and Main Page UI
 
-A new Flutter application.
+A Flutter application built to showcase the ability of building Pixel Perfect UI.
+
+# Screenshots of App Built
 
 ## Getting Started
 
